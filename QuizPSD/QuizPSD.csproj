@@ -138,6 +138,11 @@
       <DependentUpon>RealCycleModel.edmx</DependentUpon>
       <LastGenOutput>RealCycleModel.cs</LastGenOutput>
     </Content>
+    <Content Include="View\Admin\Member\ManageUser.aspx" />
+    <Content Include="View\Admin\Member\ViewProduct.aspx" />
+    <Content Include="View\Admin\Product\ManageProduct.aspx" />
+    <Content Include="View\Admin\Product\ProductForm.aspx" />
+    <Content Include="View\Admin\Product\UpdateProductForm.aspx" />
     <Content Include="View\Index.aspx" />
     <Content Include="View\LoginForm.aspx" />
     <Content Include="View\RegisterForm.aspx" />
@@ -146,6 +151,8 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Factory\ProductFactory.cs" />
+    <Compile Include="Factory\UserFactory.cs" />
     <Compile Include="Product.cs">
       <DependentUpon>RealCycleModel.tt</DependentUpon>
     </Compile>
@@ -164,8 +171,46 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RealCycleModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Repository\DatabaseSingleton.cs" />
+    <Compile Include="Repository\ProductRepo.cs" />
+    <Compile Include="Repository\UserRepo.cs" />
     <Compile Include="User.cs">
       <DependentUpon>RealCycleModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\Member\ManageUser.aspx.cs">
+      <DependentUpon>ManageUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Admin\Member\ManageUser.aspx.designer.cs">
+      <DependentUpon>ManageUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\Member\ViewProduct.aspx.cs">
+      <DependentUpon>ViewProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Admin\Member\ViewProduct.aspx.designer.cs">
+      <DependentUpon>ViewProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\Product\ManageProduct.aspx.cs">
+      <DependentUpon>ManageProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Admin\Product\ManageProduct.aspx.designer.cs">
+      <DependentUpon>ManageProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\Product\ProductForm.aspx.cs">
+      <DependentUpon>ProductForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Admin\Product\ProductForm.aspx.designer.cs">
+      <DependentUpon>ProductForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\Product\UpdateProductForm.aspx.cs">
+      <DependentUpon>UpdateProductForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Admin\Product\UpdateProductForm.aspx.designer.cs">
+      <DependentUpon>UpdateProductForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -197,9 +242,7 @@
       <DependentUpon>RegisterForm.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Model\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>

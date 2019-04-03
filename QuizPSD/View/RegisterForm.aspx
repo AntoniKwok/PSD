@@ -8,21 +8,29 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <%-- name email  password gender birth phone address --%>
+        <div>
+            <%-- name email  password gender birth phone address --%>
+            <h3>REGISTER</h3>
+            <asp:LinkButton Text="Home" runat="server" id="backHome" OnClick="backHome_Click"/>
+
             <div>
                 <asp:Label ID="Label1" runat="server" Text="Name: "></asp:Label>
-                <asp:TextBox ID="nameTxt" runat="server" Text=""></asp:TextBox>
+                <asp:TextBox ID="txtName" runat="server" Text=""></asp:TextBox>
             </div>
 
             <div>
                 <asp:Label ID="Label2" runat="server" Text="Email: "></asp:Label>
-                <asp:TextBox ID="emailTxt" runat="server" Text=""></asp:TextBox>
+                <asp:TextBox ID="txtEmail" runat="server" Text=""></asp:TextBox>
             </div>
 
             <div>
                 <asp:Label ID="Label3" runat="server" Text="Password: "></asp:Label>
-                <asp:TextBox ID="passwordTxt" runat="server" Text=""></asp:TextBox>
+                <asp:TextBox ID="txtPassword" runat="server" Text="" TextMode="Password"></asp:TextBox>
+            </div>
+        
+            <div>
+                <asp:Label ID="Label8" runat="server" Text="Confirm Password: "></asp:Label>
+                <asp:TextBox ID="txtConfirm" runat="server" Text="" TextMode="Password"></asp:TextBox>
             </div>
 
             <div>
@@ -35,25 +43,25 @@
 
             <div>
                 <asp:Label ID="Label5" runat="server" Text="BirthDate: "></asp:Label>
-                <asp:TextBox ID="birthDateTxt" runat="server" TextMode="Date"></asp:TextBox>
+                <asp:TextBox ID="txtDOB" runat="server" TextMode="Date"></asp:TextBox>
             </div>
 
             <div>
                 <asp:Label ID="Label6" runat="server" Text="Phone Number: "></asp:Label>
-                <asp:TextBox ID="phoneTxt" runat="server" Text=""></asp:TextBox>
+                <asp:TextBox ID="txtPhone" runat="server" Text=""></asp:TextBox>
             </div>
 
             <div>
                 <asp:Label ID="Label7" runat="server" Text="Address: "></asp:Label>
-                <asp:TextBox ID="addressTxt" TextMode="MultiLine" runat="server"></asp:TextBox>
+                <asp:TextBox ID="txtAddress" TextMode="MultiLine" runat="server"></asp:TextBox>
             </div>
 
             <div>
-                <asp:Button ID="RegisterBtn" OnClick="RegisterBtn_Click" 
+                <asp:Button ID="btnRegister" OnClick="RegisterBtn_Click" 
                     runat="server" Text="Register" />
                 <asp:Label ID="result" runat="server" Text=""></asp:Label>
             </div>
-    </div>
+        </div>
     </form>
 </body>
 </html>

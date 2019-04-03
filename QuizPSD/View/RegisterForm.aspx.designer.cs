@@ -22,6 +22,15 @@ namespace QuizPSD {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// backHome control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton backHome;
+        
+        /// <summary>
         /// Label1 control.
         /// </summary>
         /// <remarks>
@@ -31,13 +40,13 @@ namespace QuizPSD {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// nameTxt control.
+        /// txtName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox nameTxt;
+        protected global::System.Web.UI.WebControls.TextBox txtName;
         
         /// <summary>
         /// Label2 control.
@@ -49,13 +58,13 @@ namespace QuizPSD {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// emailTxt control.
+        /// txtEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox emailTxt;
+        protected global::System.Web.UI.WebControls.TextBox txtEmail;
         
         /// <summary>
         /// Label3 control.
@@ -67,13 +76,31 @@ namespace QuizPSD {
         protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// passwordTxt control.
+        /// txtPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox passwordTxt;
+        protected global::System.Web.UI.WebControls.TextBox txtPassword;
+        
+        /// <summary>
+        /// Label8 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label8;
+        
+        /// <summary>
+        /// txtConfirm control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtConfirm;
         
         /// <summary>
         /// Label4 control.
@@ -103,13 +130,13 @@ namespace QuizPSD {
         protected global::System.Web.UI.WebControls.Label Label5;
         
         /// <summary>
-        /// birthDateTxt control.
+        /// txtDOB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox birthDateTxt;
+        protected global::System.Web.UI.WebControls.TextBox txtDOB;
         
         /// <summary>
         /// Label6 control.
@@ -121,13 +148,13 @@ namespace QuizPSD {
         protected global::System.Web.UI.WebControls.Label Label6;
         
         /// <summary>
-        /// phoneTxt control.
+        /// txtPhone control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox phoneTxt;
+        protected global::System.Web.UI.WebControls.TextBox txtPhone;
         
         /// <summary>
         /// Label7 control.
@@ -139,22 +166,22 @@ namespace QuizPSD {
         protected global::System.Web.UI.WebControls.Label Label7;
         
         /// <summary>
-        /// addressTxt control.
+        /// txtAddress control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox addressTxt;
+        protected global::System.Web.UI.WebControls.TextBox txtAddress;
         
         /// <summary>
-        /// RegisterBtn control.
+        /// btnRegister control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button RegisterBtn;
+        protected global::System.Web.UI.WebControls.Button btnRegister;
         
         /// <summary>
         /// result control.

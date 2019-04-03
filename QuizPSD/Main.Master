@@ -5,17 +5,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+    <h2 style="width: 650px;">RealCycle</h2>
+    
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <header>Real Cycle</header>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"/>
-
+        <header>
+            <asp:ContentPlaceHolder ID="head" runat="server">
+            </asp:ContentPlaceHolder>
+        </header>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
         <footer>Copyright&copy; Quiz</footer>
-    </div>
     </form>
 </body>
 </html>

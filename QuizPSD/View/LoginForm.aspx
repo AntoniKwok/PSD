@@ -8,21 +8,24 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <asp:Label ID="labelEmail" runat="server" Text="Email"></asp:Label>
-        <asp:TextBox ID="txtEmail" runat="server" placeholder="Email"></asp:TextBox>
-    </div>
-    <div>
-        <asp:Label ID="labelPassword" runat="server" Text="Password"></asp:Label>
-        <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" placeholder="Password"></asp:TextBox>
-    </div>
-       <div>
-        <asp:CheckBox ID="CheckBox" runat="server" />Remember Me
-    </div>
-    <div>
-        <asp:Button ID="btnLogin" runat="server" Text="Login" />
-        <asp:Label ID="result" runat="server" Text=""></asp:Label>
-    </div>
+        <h3>Log In</h3>
+        <asp:LinkButton Text="Home" runat="server" id="backHome" OnClick="backHome_Click"/>
+
+        <div>
+            <asp:Label ID="labelEmail" runat="server" Text="Email"></asp:Label>
+            <asp:TextBox ID="txtEmail" runat="server" placeholder="Email"></asp:TextBox>
+        </div>
+        <div>
+            <asp:Label ID="labelPassword" runat="server" Text="Password"></asp:Label>
+            <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" placeholder="Password"></asp:TextBox>
+        </div>
+           <div>
+            <asp:CheckBox ID="CheckBox" runat="server" />Remember Me
+        </div>
+        <div>
+            <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click"/>
+            <asp:Label ID="result" runat="server" Text=""></asp:Label>
+        </div>
     </form>
 </body>
 </html>
