@@ -1,0 +1,54 @@
+Quiz
+- model
+- view
+- factory
+- repository
+- handler x
+- controller
+  service
+
+flow quiz backend  => service - factory - repository - model
+	  frontend => view
+
+add reference ke client side
+- add
+- service reference
+- jalanin service side -> ambil linknya
+- kasih nama (registerReference)
+
+roles:
+> guest
+> admin
+> member
+
+features:
+> home (isinya deskripsi ttg recycle & top products)
+> view product
+> filter product by categories
+> view top product
+> change role member [admin]
+> view member [admin]
+> CRUD product [admin]
+> logout
+
+Name	
+•	Can’t be empty
+Email	
+•	Can’t be empty
+•	Cannot take an existing Email in database
+Password	
+•	Can’t be empty
+•	Must be filled with alphanumeric
+•	Minimal length is 8 characters
+Confirm Password	
+•	Must be filled and exactly same with password
+Gender	
+•	Must be chosen
+Birth Date	
+•	Minimal current age is 17 years old
+Phone Number	
+•	Must be filled with numeric characters
+•	Length must be between 10 – 12 characters
+Address	
+•	Can’t be empty
+•	Must ends with ‘Street’

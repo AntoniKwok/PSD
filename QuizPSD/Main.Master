@@ -1,0 +1,21 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="QuizPSD.Main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <header>Real Cycle</header>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"/>
+
+        <footer>Copyright&copy; Quiz</footer>
+    </div>
+    </form>
+</body>
+</html>
