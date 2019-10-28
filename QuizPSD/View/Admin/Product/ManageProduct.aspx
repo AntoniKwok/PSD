@@ -6,6 +6,7 @@
     <div>
         <h4 style="width: 115px;">List of Products</h4>
         <asp:Button ID="btnAdd" runat="server" Text="Add New Product" OnClick="btnAdd_Click"/>
+		<asp:Button ID="btnRemove" runat="server" Text="Remove Product" OnClick="btnAdd_Click"/>
     </div>
     <div>
         <asp:GridView ID="allProduct" runat="server" AutoGenerateColumns="false">
